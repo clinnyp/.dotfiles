@@ -9,10 +9,13 @@ sudo apt install git zsh -y
 sudo chsh -s $(which zsh)
 
 # oh my zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" -y
 
 # homebrew packages
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" -y
+echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /home/virtual/.zprofile
+echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/virtual/.zprofile
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 brew install neovim
 brew install watchman
 brew install stow
@@ -29,5 +32,9 @@ then
         echo "This is Windows WSL baby!"
 else
     sudo apt install flatpak -y
+    cd ~ && git clone https://github.com/ryanoasis/nerd-fonts.git
+    cd ~/nerf-fonts
+    chmox +x install.sh && sudo ./install.sh -y
+
 fi
 # deb installs
