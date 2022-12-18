@@ -4,7 +4,7 @@ sudo apt-get update && sudo apt-get dist-upgrade -y
 sudo apt-get install build-essential -y
 
 # packages
-sudo apt install git curl zsh -y
+sudo apt install git curl fonts-firacode zsh -y
 
 sudo chsh -s $(which zsh)
 
@@ -32,7 +32,15 @@ then
     echo "This is Windows WSL baby!"
 else
     sudo apt install flatpak -y
-    brew tap homebrew/cask-fonts
-    brew install --cask font-fira-code
+    flatpak install flathub com.discordapp.Discord
+    flatpak install flathub com.spotify.Client
+    flatpak install flathub com.slack.Slack
+    flatpak install flathub rest.insomnia.insomnia
+    flatpak install flathub com.getpostman.Postman
+    flatpak install flathub com.google.Chrome
+    flatpak install flathub org.videolan.VLC
+    flatpak install flathub us.zoom.Zoom
+    flatpak install flathub org.qbittorrent.qBittorrent
+    flatpak install flathub com.bitwarden.desktop
 fi
 # deb installs
