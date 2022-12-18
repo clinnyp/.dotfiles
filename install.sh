@@ -32,15 +32,15 @@ then
     echo "This is Windows WSL baby!"
 else
     sudo apt install flatpak -y
-    flatpak install flathub com.discordapp.Discord
-    flatpak install flathub com.spotify.Client
-    flatpak install flathub com.slack.Slack
-    flatpak install flathub rest.insomnia.insomnia
-    flatpak install flathub com.getpostman.Postman
-    flatpak install flathub com.google.Chrome
-    flatpak install flathub org.videolan.VLC
-    flatpak install flathub us.zoom.Zoom
-    flatpak install flathub org.qbittorrent.qBittorrent
-    flatpak install flathub com.bitwarden.desktop
+    flatpak install flathub com.discordapp.Discord -y
+    flatpak install flathub com.spotify.Client -y
+    flatpak install flathub com.slack.Slack -y
+    flatpak install flathub rest.insomnia.insomnia -y
+    flatpak install flathub com.getpostman.Postman -y
+    flatpak install flathub com.google.Chrome -y
+    flatpak install flathub org.videolan.VLC -y
+    flatpak install flathub us.zoom.Zoom -y
+    flatpak install flathub org.qbittorrent.qBittorrent -y
+    flatpak install flathub com.bitwarden.desktop -y
 fi
 # deb installs
