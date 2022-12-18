@@ -26,15 +26,13 @@ git clone https://github.com/clintonphilathong/.dotfiles.git
 cd ~/.dotfiles
 stow .
 
-# flatpak installs
+# desktop environment installs
 if [ $(uname -r | sed -n 's/.*\( *Microsoft *\).*/\1/ip') ];
 then
-        echo "This is Windows WSL baby!"
+    echo "This is Windows WSL baby!"
 else
     sudo apt install flatpak -y
-    cd ~ && git clone https://github.com/ryanoasis/nerd-fonts.git
-    cd ~/nerf-fonts
-    chmox +x install.sh && sudo ./install.sh -y
-
+    brew tap homebrew/cask-fonts
+    brew install --cask font-fira-code
 fi
 # deb installs
