@@ -4,7 +4,7 @@ sudo apt-get update && sudo apt-get dist-upgrade -y
 sudo apt-get install build-essential -y
 
 # packages
-sudo apt install git zsh -y
+sudo apt install git curl zsh -y
 
 sudo chsh -s $(which zsh)
 
@@ -12,7 +12,7 @@ sudo chsh -s $(which zsh)
 sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" -y
 
 # homebrew packages
-sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" -y
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" -y
 echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /home/virtual/.zprofile
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/virtual/.zprofile
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
