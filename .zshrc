@@ -13,6 +13,9 @@ alias work="cd ~/Documents/workspace"
 alias vim="nvim"
 alias zshrc="vim ~/.zshrc"
 
+echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /home/clintonphilathong/.zprofile
+echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/clintonphilathong/.zprofile
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -106,3 +109,5 @@ source $ZSH/oh-my-zsh.sh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
