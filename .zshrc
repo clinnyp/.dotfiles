@@ -15,8 +15,8 @@ alias zshrc="vim ~/.zshrc"
 alias viminit="cd ~/.config/nvim"
 alias gs="lazygit"
 
-echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /home/clintonphilathong/.zprofile
-echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/clintonphilathong/.zprofile
+echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /home/clinton/.zprofile
+echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/clinton/.zprofile
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Set list of themes to pick from when loading at random
@@ -114,4 +114,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
+export PATH=$PATH:/usr/local/go/bin
 # eval "$(starship init zsh)"
