@@ -9,13 +9,17 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
+alias nrd="npm run dev"
+alias nrs="npm run start"
 alias work="cd ~/Documents/workspace"
 alias vim="nvim"
 alias zshrc="vim ~/.zshrc"
 alias viminit="cd ~/.config/nvim"
 alias gs="lazygit"
 alias e="exit"
+alias tls="tmux ls"
 
+# change username for different systems
 echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /home/clinton/.zprofile
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/clinton/.zprofile
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
@@ -113,6 +117,7 @@ source $ZSH/oh-my-zsh.sh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export TERM="xterm-256color"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH=$PATH:/usr/local/go/bin
