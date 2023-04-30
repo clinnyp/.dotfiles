@@ -14,6 +14,7 @@ alias vim="nvim"
 alias zshrc="vim ~/.zshrc"
 alias viminit="cd ~/.config/nvim"
 alias gs="lazygit"
+alias e="exit"
 
 echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /home/clinton/.zprofile
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/clinton/.zprofile
