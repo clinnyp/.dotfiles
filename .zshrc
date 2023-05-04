@@ -20,8 +20,8 @@ alias e="exit"
 alias tls="tmux ls"
 
 # change username for different systems
-echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /home/clinton/.zprofile
-echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/clinton/.zprofile
+echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /home/clintonphilathong/.zprofile
+echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/clintonphilathong/.zprofile
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Set list of themes to pick from when loading at random
@@ -119,6 +119,23 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export TERM="xterm-256color"
 export PATH="/usr/local/bin:$PATH"
-export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/MATLAB/R2023a/bin:$PATH"
+
 export PATH=$PATH:/usr/local/go/bin
 # eval "$(starship init zsh)"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/clintonphilathong/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/clintonphilathong/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/clintonphilathong/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/clintonphilathong/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
