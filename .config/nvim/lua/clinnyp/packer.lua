@@ -86,4 +86,13 @@ return require("packer").startup(function(use)
 	use({ "jose-elias-alvarez/null-ls.nvim" })
 	use({ "windwp/nvim-ts-autotag" })
 	use({ "rose-pine/neovim", as = "rose-pine" })
+	-- use({ "onsails/lspkind.nvim" })
+	use({ "lukas-reineke/indent-blankline.nvim" })
+	use({
+		"lewis6991/gitsigns.nvim",
+		config = function()
+			require("gitsigns").setup()
+		end,
+	})
+	use({ "NvChad/nvim-colorizer.lua" })
 end)
