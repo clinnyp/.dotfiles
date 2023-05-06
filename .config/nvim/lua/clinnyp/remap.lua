@@ -1,5 +1,5 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.NvimTreeToggle)
+vim.keymap.set("n", "<leader>pe", vim.cmd.NvimTreeToggle)
 
 
 vim.keymap.set("i", "<C-c>", "<Esc>")
