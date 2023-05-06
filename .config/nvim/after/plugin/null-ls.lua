@@ -8,5 +8,6 @@ null_ls.setup({
     formatting.prettierd,
     formatting.stylua,
     formatting.black,
+    formatting.rustfmt,
   }
 })
