@@ -19,7 +19,7 @@ alias gs="lazygit"
 alias e="exit"
 alias tls="tmux ls"
 alias tns="tmux new -s"
-alias tks="tmix kill-ses -t"
+alias tks="tmux kill-ses -t"
 
 # change username for different systems
 echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /home/clintonphilathong/.zprofile
