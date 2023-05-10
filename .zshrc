@@ -20,6 +20,8 @@ alias e="exit"
 alias tls="tmux ls"
 alias tns="tmux new -s"
 alias tks="tmux kill-ses -t"
+alias dnb="dotnet build"
+alias dnr="dotnet run"
 
 # change username for different systems
 echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /home/clintonphilathong/.zprofile
