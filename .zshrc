@@ -11,6 +11,7 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 alias nrd="npm run dev"
 alias nrs="npm run start"
+alias gr="go run"
 alias dr="dotnet run"
 alias work="cd ~/Documents/workspace"
 alias vim="nvim"
@@ -144,3 +145,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+[[ -s "/home/clintonphilathong/.gvm/scripts/gvm" ]] && source "/home/clintonphilathong/.gvm/scripts/gvm"
