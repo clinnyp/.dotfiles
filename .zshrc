@@ -126,6 +126,9 @@ export NVM_DIR="$HOME/.nvm"
 export TERM="xterm-256color"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/MATLAB/R2023a/bin:$PATH"
+export ANDROID_HOME=/home/clintonphilathong/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 export PATH=$PATH:/usr/local/go/bin
 # eval "$(starship init zsh)"
